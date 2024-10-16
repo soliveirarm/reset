@@ -29,7 +29,7 @@
   ],
   "start_url": "/",
   "display": "fullscreen",
-  "background_color": "#000000",
-  "theme_color": "#8ACE00",
+  "background_color": "#060F19",
+  "theme_color": "#34d399",
   "description": "App feito para calcular contas mensais e se organizar financeiramente"
 }

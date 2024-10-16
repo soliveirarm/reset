@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: Inter, sans-serif;
+}
+
+input {
+  @apply placeholder-slate-400;
+}
+
+.input {
+  @apply p-3 border-b-2 shadow-md custom-border outline-none transition focus:placeholder-transparent;
+}
+
+.input.-negative {
+  @apply border-red-400 focus:bg-red-400;
+}
+
+.input.-positive {
+  @apply border-emerald-400 focus:bg-emerald-400;
+}
+
+.sign-button {
+  @apply flex justify-center items-center border-b-2 shadow-md py-3 px-4 custom-border transition;
+}
+
+.sign-button.-positive {
+  @apply border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-black;
+}
+
+.sign-button.-negative {
+  @apply border-red-500 text-red-500 hover:bg-red-500 hover:text-white;
+}
+
+.custom-border {
+  border-radius: 20px 8px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-300 rounded hover:bg-zinc-400;
+}
